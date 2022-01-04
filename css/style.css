@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0a32e8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #006bff;
+  border-radius: 50px;
+}
+
+body {
+  display: grid;
+  font-family: Fortnite;
+  background: rgb(0, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 60%,
+    rgba(0, 146, 255, 1) 83%,
+    rgba(47, 107, 190, 1) 100%
+  );
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: Fortnite;
+  src: url(fonts/Burbank\ Big\ Condensed\ Black.ttf);
+}
+
+main {
+  height: 90vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  color: rgb(224, 224, 224);
+  font-size: 4.2em;
+}
+
+.custom-font {
+  font-family: Fortnite;
+}
+
+.style-button {
+  background-color: #4b5d97;
+  border: none;
+  padding: 8px;
+  color: #fff;
+  font-family: Fortnite;
+  font-size: 1.6em;
+  font-weight: lighter;
+  cursor: pointer;
+  margin: 8px;
+  letter-spacing: 1px;
+  transition: 0.2s;
+  box-shadow: 4px 4px 13px -5px rgb(20, 20, 20);
+}
+
+.style-button:hover {
+  background-color: #faf113;
+  color: #000;
+  transform: scale(1.15);
+}
+
+/*Shop page & Battle Pass*/
+.back-to-home {
+  position: fixed;
+  top: 12px;
+  left: 30px;
+}
+
+.back-to-home a img {
+  width: 40px;
+  transition: 0.2s;
+}
+
+.back-to-home a img:hover {
+  transform: scale(1.2);
+}
+
+/*Battle Pass*/
+
+#page-1 {
+  width: 500px;
+  height: 500px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "a1 a2 a2 a2 a3 a3 a3"
+    "b1 a2 a2 a2 a3 a3 a3"
+    "c1 c2 c3 c3 c4 c5 c6";
+}
+
+#card-1-a {
+  grid-area: a1;
+}
+
+#card-2-a {
+  grid-area: a2;
+}
+
+#card-3-a {
+  grid-area: a3;
+}
+
+#card-4-a {
+  grid-area: b1;
+}
+
+#card-5-a {
+  grid-area: c1;
+}
+
+#card-6-a {
+  grid-area: c2;
+}
+
+#card-7-a {
+  grid-area: c3;
+}
+
+#card-8-a {
+  grid-area: c4;
+}
+
+#card-9-a {
+  grid-area: c5;
+}
+
+#card-10-a {
+  grid-area: c6;
+}
+
+.card-section {
+  background-color: red;
+}
